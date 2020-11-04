@@ -25,6 +25,27 @@
           ></textarea>
         </div>
         <div class="card-footer">
+          <div>
+            <label for="passwordLength">Password Length:</label>
+            <input id="passwordLength" type="text" class="form-control" placeholder="8" onchange="updatepasswordLength(this.value)">
+          </div>
+          <div>
+            <input id="hasLowercase" type="checkbox" checked=true onchange="hasLowercase=this.checked">
+            <label for="hasLowercase">Must contain lowercase letter</label>
+          </div>
+          <div>
+            <input id="hasUppercase" type="checkbox" onchange="hasUppercase=this.checked">
+            <label for="hasUppercase">Must contain uppercase letter</label>
+          </div>
+          <div>
+            <input id="hasNumber" type="checkbox" onchange="hasNumeric=this.checked">
+            <label for="hasNumber">Must contain numbers</label>
+          </div>
+          <div>
+            <input id="hasSpecialCharacter" type="checkbox" onchange="hasSpecialCharacters=this.checked">
+            <label for="hasSpecialCharacter">Must contain special characters</label>
+          </div>
+
           <button id="generate" class="btn">Generate Password</button>
         </div>
       </div>
