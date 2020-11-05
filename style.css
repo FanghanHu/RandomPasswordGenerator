@@ -46,7 +46,6 @@ header {
   content: " ";
   display: block;
   width: 100%;
-  background: #e7e9eb;
   height: 2px;
 }
 
@@ -62,7 +61,6 @@ header {
   content: " ";
   display: block;
   width: 100%;
-  background: #e7e9eb;
   height: 2px;
 }
 
@@ -102,20 +100,27 @@ button[disabled] {
   -moz-appearance: none;
   appearance: none;
   border: none;
-  display: block;
-  width: 100%;
-  padding-top: 15px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-bottom: 85px;
-  font-size: 1.2rem;
-  text-align: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border: 2px dashed #c0c7cf;
-  border-radius: 6px;
+  font-size: 1.75rem;
+  line-height: 2rem;
   resize: none;
   overflow: hidden;
+  text-align: center;
+  font-family: 'VT323', monospace;
+  width: 80%;
+  overflow-wrap: break-word;
+  margin: auto;
+}
+
+#passwordContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  min-height: 150px;
+  border: 2px dashed #c0c7cf;
+  border-radius: 6px;
 }
 
 @media (max-width: 690px) {
