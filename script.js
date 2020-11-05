@@ -105,9 +105,11 @@ function updatepasswordLength(str) {
   if(isNaN(num)) {
     alert("Length must be a valid number");
     document.getElementById('passwordLength').value = '8';
+    passwordLength = 8;
   } else if (num < 8 || num > 128) {
     alert("length must be between 8 and 128.");
     document.getElementById('passwordLength').value = '8';
+    passwordLength = 8;
   } else {
     passwordLength = num;
   }
