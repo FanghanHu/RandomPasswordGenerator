@@ -7,7 +7,7 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
 
   passwordText.textContent = password;
-
+  passwordText.style.color = 'Green';
 }
 
 // Add event listener to generate button
